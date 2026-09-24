@@ -1,0 +1,30 @@
+{
+  "name": "nha",
+  "interface": {
+    "displayName": "National Health Authority"
+  },
+  "plugins": [
+    {
+      "name": "abdm-integrators-assistant",
+      "source": {
+        "source": "local",
+        "path": "./plugins/abdm-integrators-assistant"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Documentation"
+    },
+    {
+      "name": "nhcx",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nhcx"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Documentation"
+    }
+  ]
+}

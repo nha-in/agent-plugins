@@ -1,0 +1,43 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "nha",
+  "description": "Agent plugins from the National Health Authority for building on India's digital health networks: ABDM integration skills and the NHCX claims integration, each with its documentation MCP server.",
+  "owner": {
+    "name": "National Health Authority",
+    "url": "https://docs.abdm.gov.in"
+  },
+  "plugins": [
+    {
+      "name": "abdm-integrators-assistant",
+      "source": "./plugins/abdm-integrators-assistant",
+      "description": "Build and debug an ABDM integration. Build skills scaffold a milestone flow by flow against the sandbox, M1 to M4 on the provider side and P1 to P3 inside a PHR application. Debug skills walk a failed call to a named fix, citing the Catalogue atom behind every step. fhir-generate and fhir-audit build or audit NRCES compliant FHIR document bundles against the Docs MCP validator.",
+      "category": "documentation",
+      "keywords": [
+        "abdm",
+        "abha",
+        "hie-cm",
+        "fhir",
+        "nrces",
+        "healthcare",
+        "india-health"
+      ],
+      "homepage": "https://docs.abdm.gov.in"
+    },
+    {
+      "name": "nhcx",
+      "source": "./plugins/nhcx",
+      "description": "Build the provider side of an NHCX claims integration into a hospital information system. nhcx-full builds it end to end; one skill per use case builds coverage, pre-authorisation, claim, communication, payment or reprocess on its own. Each finds what the system already has, builds only what is missing, and connects the nhcx-docs MCP server for live answers.",
+      "category": "documentation",
+      "keywords": [
+        "nhcx",
+        "claims",
+        "insurance",
+        "pmjay",
+        "fhir",
+        "healthcare",
+        "india-health"
+      ],
+      "homepage": "https://docs.abdm.gov.in"
+    }
+  ]
+}
